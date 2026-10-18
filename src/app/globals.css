@@ -1,0 +1,63 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+/*
+  Mesa — restaurant management portal.
+  Hospitality palette: warm paper, terracotta accent, brass for celebrations.
+  Source of truth: mesa-core/src/tokens.ts. Mirror of mesa-mobile/tailwind.config.js.
+*/
+
+@theme inline {
+  --font-sans: var(--font-hanken), "Hanken Grotesk", system-ui, sans-serif;
+
+  --color-ink: #17150f;
+  --color-ink2: #2b2820;
+  --color-slate: #3a372f;
+  --color-mute: #6e6a5e;
+  --color-line: #e3ddd1;
+  --color-paper: #faf7f1;
+  --color-chalk: #ffffff;
+  --color-sand: #efe9dc;
+
+  --color-terracotta: #b4563a;
+  --color-terracotta-d: #9a4630;
+  --color-olive: #5b6b4e;
+  --color-brass: #c9973f;
+
+  --color-ok: #2f8f5b;
+  --color-ok-bg: #e7f4ec;
+  --color-warn: #b5730f;
+  --color-warn-bg: #fdf3e0;
+  --color-danger: #b3261e;
+  --color-danger-bg: #fdecea;
+  --color-info: #2f5f8f;
+  --color-info-bg: #e8f0f8;
+
+  --shadow-soft: 0 2px 18px rgba(23, 21, 15, 0.06);
+  --shadow-lift: 0 18px 50px rgba(23, 21, 15, 0.12);
+  --shadow-pop: 0 10px 32px rgba(23, 21, 15, 0.16);
+
+  --radius-card: 14px;
+}
+
+* {
+  border-color: var(--color-line);
+}
+
+html,
+body {
+  background: var(--color-paper);
+  color: var(--color-slate);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-brass);
+  color: var(--color-ink);
+}
+
+/* Data-dense back office: tighter default focus ring, always visible. */
+:focus-visible {
+  outline: 2px solid var(--color-terracotta);
+  outline-offset: 2px;
+}

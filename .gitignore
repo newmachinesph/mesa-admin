@@ -1,0 +1,21 @@
+node_modules
+.next
+out
+build
+.env*
+!.env.example
+*.tsbuildinfo
+next-env.d.ts
+.DS_Store
+
+# AI tooling / orchestration — never committed
+.claude/
+.impeccable/
+.loadout/
+.gstack/
+CLAUDE.md
+AGENTS.md
+PROJECT.md
+DECISIONS.md
+MISTAKES.md
+DEBT.md
